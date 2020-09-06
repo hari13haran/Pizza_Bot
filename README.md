@@ -6,4 +6,4 @@ The bot should supports the following use-cases:
 3.	Check Pizza Status by Order ID
 4.	UI to chat with the chatbot
 
-This website was built withsk framework.
+This website was built with Flask Framework.
