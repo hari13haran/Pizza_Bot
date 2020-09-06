@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet/css" href="index.css" />
+    <title>Pizza Bot</title>
+  </head>
+  <body style="background-color:black;">
+    <nav
+      class="navbar navbar-expand-lg "
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#" style="color:  white;">YoYo Pizza Shop</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#chatus" style="color:  white;">Chat with Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactus" style="color:  white;">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <img
+            src="../static/pizza-home.jpg"
+            class="d-block w-100"
+            style="height: 700px;"
+          />
+          <div
+            class="carousel-caption d-none d-md-block"
+            style="bottom: 200px;"
+          >
+            <h5 style="font-size: 100px;">YoYo Pizza Shop</h5>
+            <p style="color:black; font-size:2em">The Best Pizza Place in the town!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="chatus" style="margin-top: 50px; margin-right: 250px; margin-left: 250px;">
+      <h3 style="color: white;">Chat with us </br> to Place your Order Now!</h3>
+    <div class="alert alert-secondary" role="alert" style="margin-top: 50px; margin-right: 250px; margin-left: 350px;">
+      You: {{user_input}}
+    </div>
+    <div class="alert alert-danger" role="alert" style="margin-top: 50px; margin-right: 250px; margin-left: 250px;">
+      Bot: {{bot_response}}
+   </div>
+    <form action='/chat' method="POST">
+      <div class="form-group" style="margin-top: 50px; margin-right: 250px; margin-left: 250px;">
+        <input
+          type="text"
+          name = "user_input"
+          class="form-control"
+          placeholder="You:"
+        />
+        <br><br>
+      <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+    </div>
+
+    </br> </br>
+
+    <h3 style="color: white;">Our Menu:</h3>
+
+    </br> </br>
+
+    <div class="d-flex flex-row bd-highlight justify-content-center mb-3">
+      <div class="p-2 bd-highlight">
+        <div class="card" style="width: 18rem; background-color: black;">
+          <h3 style="color: white;">Capsi - Delight</h3>
+          <img
+            class="card-img-top"
+            src="../static/card1.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <p class="card-text" style="color: white;">
+              Indulge into mouth-watering taste of Pizza mania
+              with the sole goodness of capsicum!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 bd-highlight">
+        <div class="card" style="width: 18rem; background-color: black;">
+          <h3 style="color: white;">Chicken Fiesta</h3>
+          <img
+            class="card-img-top"
+            src="../static/card-2.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <p class="card-text" style="color: white;">
+              Choose your favourite non-veg pizza now!
+              Chicken is definitely going to bring a Fieasta!!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 bd-highlight">
+        <div class="card" style="width: 18rem; background-color: black; ">
+          <h3 style="color: white;">Veg Extragavanza</h3>
+          <img
+            class="card-img-top"
+            src="../static/card-3.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <p class="card-text" style="color: white;">
+              A delight for veggie lovers!
+              With the goodness of Extragavanza!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex flex-row bd-highlight justify-content-center mb-3">
+      <div class="p-2 bd-highlight">
+        <div class="card" style="width: 18rem; background-color: black;">
+          <h3 style="color: white;">Peppy Paneer</h3>
+          <img
+            class="card-img-top"
+            src="../static/card-1.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <p class="card-text" style="color: white;">
+              Indulge into mouth-watering taste of Paneer
+              with the slight hint of peppyness!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 bd-highlight">
+        <div class="card" style="width: 18rem; background-color: black;">
+          <h3 style="color: white;">Pepper Barbeque</h3>
+          <img
+            class="card-img-top"
+            src="../static/card2.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <p class="card-text" style="color: white;">
+              Choose your favourite non-veg pizzas
+              with the added bonus of Barbeque!!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 bd-highlight">
+        <div class="card" style="width: 18rem; background-color: black; ">
+          <h3 style="color: white;">Cheese N Tomato</h3>
+          <img
+            class="card-img-top"
+            src="../static/card3.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <p class="card-text" style="color: white;">
+              A delight for veggie lovers! with the
+              Cheese N Tomato, it's softer and tastier
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <hr />
+    <div class="mt-5 pt-5 pb-5 footer" id="contactus">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-xs-12 about-company" style="color:white">
+            <h2>Disclaimer</h2>
+            <p class="pr-5 text-white-50">
+              Food shown are for illustration purpose only. Actual product may
+              differ from the images shown in this website. Our menu prices are
+              now inclusive of GST.* The YoYo Pizza name, logos, and related
+              marks are trademarks of Pizza Spot, Inc. All chicken products
+              contain Monosodium Glutamate. Not recommended for infants below 12
+              months.
+            </p>
+          </div>
+          <div class="col-lg-3 col-xs-12 links" style="color:white">
+            <h4 class="mt-lg-0 mt-sm-3">find us on</h4>
+
+            <a class="btn btn-social-icon btn-facebook">
+              <span class="fa fa-facebook"></span>
+            </a>
+
+            <a class="btn btn-social-icon btn-twitter">
+              <span class="fa fa-twitter"></span>
+            </a>
+            <a class="btn btn-social-icon btn-twitter">
+              <span class="fa fa-google"></span>
+            </a>
+          </div>
+          <div class="col-lg-4 col-xs-12 location" style="color:white">
+            <h4 class="mt-lg-0 mt-sm-4">Locations</h4>
+            <p>22, Brough road, St Mount, Pune - 24</p>
+            <p>41-A, Thames corner, Indore - 05</p>
+            <p>No-6, Generals Colony, Chennai - 28</p>
+            <p>66/D, VOC Nagar, Coimbatore - 14</p>
+            <p class="mb-0"><i class="fa fa-phone mr-3"></i>+91 98 1254 1254</p>
+            <p><i class="fa fa-envelope-o mr-3"></i>helpline@yoyopizza.com</p>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col copyright">
+            <p class="">
+              <small class="text-white-50">© 2020. All Rights Reserved.</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
